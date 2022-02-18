@@ -22,7 +22,7 @@ We evaluated routes between the <a href="https://www.google.com/maps/place/%E6%B
 <ol start="2" dir="auto">
 <li>
 <li>
-Filter GPS trajectories by longitude and latitude so that only routes between the aiport and train station or north and west train stations are left. You'll also have to worry about routes that have infrequent readings because it makes reconstructing their true route impossible.</p>
+<p dir="auto"><a href="https://github.com/dtroupe18/TaxiProject/blob/master/AirToTrain/Python-Scripts/find_relevant_trajectories.py">Filter</a> GPS trajectories by longitude and latitude so that only routes between the aiport and train station or north and west train stations are left. You'll also have to worry about routes that have infrequent readings because it makes reconstructing their true route impossible.</p>
 </li>
 <p dir="auto">Graph those routes using <a href="https://matplotlib.org/" rel="nofollow">Matplotlib</a> and compare them to Google Maps routes.All airport to All train to train stations route.</p>
 </li>
