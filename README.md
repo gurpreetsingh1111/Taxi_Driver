@@ -21,9 +21,26 @@ We evaluated routes between the <a href="https://www.google.com/maps/place/%E6%B
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/dtroupe18/TaxiProject/blob/master/TrainToTrain/Images/SummaryImages/Train%20Station%20West%20to%20Train%20Station%20North%20Google%20Maps%20Routes.png"><img src="https://github.com/dtroupe18/TaxiProject/raw/master/TrainToTrain/Images/SummaryImages/Train%20Station%20West%20to%20Train%20Station%20North%20Google%20Maps%20Routes.png" width="300" style="max-width: 100%;"></a></p>
 <ol start="2" dir="auto">
 <li>
-<p dir="auto"><a href="https://github.com/dtroupe18/TaxiProject/blob/master/AirToTrain/Python-Scripts/find_relevant_trajectories.py">Filter</a> GPS trajectories by longitude and latitude so that only routes between the aiport and train station or north and west train stations are left. You'll also have to worry about routes that have infrequent readings because it makes reconstructing their true route impossible.</p>
+<p Filter GPS trajectories by longitude and latitude so that only routes between the aiport and train station or north and west train stations are left. You'll also have to worry about routes that have infrequent readings because it makes reconstructing their true route impossible.</p>
 </li>
 <li>
 <p dir="auto">Graph those routes using <a href="https://matplotlib.org/" rel="nofollow">Matplotlib</a> and compare them to Google Maps routes.All airport to All train to train stations route.</p>
 </li>
+</ol>
+
+<p dir="auto">Sample:</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/dtroupe18/TaxiProject/blob/master/TrainToTrain/Images/NorthToWestImages/All-Routes/North%20to%20West%20Train%20Route%20622571.png"><img src="https://github.com/dtroupe18/TaxiProject/raw/master/TrainToTrain/Images/NorthToWestImages/All-Routes/North%20to%20West%20Train%20Route%20622571.png" width="300" style="max-width: 100%;"></a></p>
+<ol start="4" dir="auto">
+<li>Create a baseline method to evaluate fraud. Our baseline method labeled routes that had above average time and distance as fraud. Our method was limited by the amount of data we had so we couldn't determine if these anamolous trajectories were the result of things such as traffic. Additionally, we weren't able to access historical data to determine if the driver is familiar with that area.</li>
+</ol>
+<p dir="auto">-Airport to train station routes vs Google maps:</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/dtroupe18/TaxiProject/blob/master/AirToTrain/Images/Train%20to%20Airport%20Station%20Google%20Maps%20vs%20Actual.png"><img src="https://github.com/dtroupe18/TaxiProject/raw/master/AirToTrain/Images/Train%20to%20Airport%20Station%20Google%20Maps%20vs%20Actual.png" width="300" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/dtroupe18/TaxiProject/blob/master/AirToTrain/Images/Airport%20to%20Train%20Station%20Google%20Maps%20vs%20Actual.png"><img src="https://github.com/dtroupe18/TaxiProject/raw/master/AirToTrain/Images/Airport%20to%20Train%20Station%20Google%20Maps%20vs%20Actual.png" width="300" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/dtroupe18/TaxiProject/blob/master/TrainToTrain/Images/SummaryImages/North%20to%20West%20Train%20Station%20Google%20Maps%20vs%20Actual.png"><img src="https://github.com/dtroupe18/TaxiProject/raw/master/TrainToTrain/Images/SummaryImages/North%20to%20West%20Train%20Station%20Google%20Maps%20vs%20Actual.png" width="300" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/dtroupe18/TaxiProject/blob/master/TrainToTrain/Images/SummaryImages/West%20to%20North%20Train%20Station%20Google%20Maps%20vs%20Actual.png"><img src="https://github.com/dtroupe18/TaxiProject/raw/master/TrainToTrain/Images/SummaryImages/West%20to%20North%20Train%20Station%20Google%20Maps%20vs%20Actual.png" width="300" style="max-width: 100%;"></a></p>
+<p dir="auto">-Sample fraud based on baseline method (above average time and distance)</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/dtroupe18/TaxiProject/blob/master/AirToTrain/Images/All-Route-Graphs/Suspected-Air-Fraud/Airport%20to%20Train%20Route%20329370.png"><img src="https://github.com/dtroupe18/TaxiProject/raw/master/AirToTrain/Images/All-Route-Graphs/Suspected-Air-Fraud/Airport%20to%20Train%20Route%20329370.png" width="300" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/dtroupe18/TaxiProject/blob/master/TrainToTrain/Images/NorthToWestImages/Fraud-By-Time-Distance/North%20to%20West%20Train%20Route%20509935.png"><img src="https://github.com/dtroupe18/TaxiProject/raw/master/TrainToTrain/Images/NorthToWestImages/Fraud-By-Time-Distance/North%20to%20West%20Train%20Route%20509935.png" width="300" style="max-width: 100%;"></a></p>
+<ol start="6" dir="auto">
+<li>Map GPS trajectories to cells</a> based on their coordinates. This turns a trajectory into a series of cells that were visted. We then compared how similar every trajectories cell path was to the cell path of a Google Maps route. If less than 80% of the cells were the same we labeled that route fraudulent.</li>
 </ol>
