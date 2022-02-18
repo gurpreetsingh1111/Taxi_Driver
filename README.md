@@ -48,6 +48,7 @@ We evaluated routes between the <a href="https://www.google.com/maps/place/%E6%B
 <p dir="auto">-Sample fraud based on baseline method (above average time and distance)</p>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/dtroupe18/TaxiProject/blob/master/AirToTrain/Images/All-Route-Graphs/Suspected-Air-Fraud/Airport%20to%20Train%20Route%20329370.png"><img src="https://github.com/dtroupe18/TaxiProject/raw/master/AirToTrain/Images/All-Route-Graphs/Suspected-Air-Fraud/Airport%20to%20Train%20Route%20329370.png" width="300" style="max-width: 100%;"></a></p>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/dtroupe18/TaxiProject/blob/master/TrainToTrain/Images/NorthToWestImages/Fraud-By-Time-Distance/North%20to%20West%20Train%20Route%20509935.png"><img src="https://github.com/dtroupe18/TaxiProject/raw/master/TrainToTrain/Images/NorthToWestImages/Fraud-By-Time-Distance/North%20to%20West%20Train%20Route%20509935.png" width="300" style="max-width: 100%;"></a></p>
-<ol start="6" dir="auto">
+<ol start="5" dir="auto">
 <li>Map GPS trajectories to cells</a> based on their coordinates. This turns a trajectory into a series of cells that were visted. We then compared how similar every trajectories cell path was to the cell path of a Google Maps route. If less than 80% of the cells were the same we labeled that route fraudulent.</li>
 </ol>
+
