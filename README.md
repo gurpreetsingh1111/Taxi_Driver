@@ -21,9 +21,9 @@ We evaluated routes between the <a href="https://www.google.com/maps/place/%E6%B
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/dtroupe18/TaxiProject/blob/master/TrainToTrain/Images/SummaryImages/Train%20Station%20West%20to%20Train%20Station%20North%20Google%20Maps%20Routes.png"><img src="https://github.com/dtroupe18/TaxiProject/raw/master/TrainToTrain/Images/SummaryImages/Train%20Station%20West%20to%20Train%20Station%20North%20Google%20Maps%20Routes.png" width="300" style="max-width: 100%;"></a></p>
 <ol start="2" dir="auto">
 <li>
-<p dir="auto">Filter<GPS trajectories by longitude and latitude so that only routes between the aiport and train station or north and west train stations are left. You'll also have to worry about routes that have infrequent readings because it makes reconstructing their true route impossible.</p>
+<p dir="auto"><a href="https://github.com/dtroupe18/TaxiProject/blob/master/AirToTrain/Python-Scripts/find_relevant_trajectories.py">Filter</a> GPS trajectories by longitude and latitude so that only routes between the aiport and train station or north and west train stations are left. You'll also have to worry about routes that have infrequent readings because it makes reconstructing their true route impossible.</p>
 </li>
 <li>
-<p dir="auto">Graph those routes using <a href="https://matplotlib.org/" rel="nofollow">Matplotlib</a> and compare them to Google Maps routes. All airport to train station routes <a href="https://github.com/dtroupe18/TaxiProject/tree/master/TrainToTrain/Images">All train to train routes</a></p>
+<p dir="auto">Graph those routes using <a href="https://matplotlib.org/" rel="nofollow">Matplotlib</a> and compare them to Google Maps routes.All airport to All train to train stations route.</p>
 </li>
 </ol>
