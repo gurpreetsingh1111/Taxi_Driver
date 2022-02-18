@@ -19,12 +19,19 @@ We evaluated routes between the <a href="https://www.google.com/maps/place/%E6%B
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/dtroupe18/TaxiProject/blob/master/AirToTrain/Images/Train%20to%20Airport%20Station%20Google%20Maps.png"><img src="https://github.com/dtroupe18/TaxiProject/raw/master/AirToTrain/Images/Train%20to%20Airport%20Station%20Google%20Maps.png" width="300" style="max-width: 100%;"></a></p>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/dtroupe18/TaxiProject/blob/master/TrainToTrain/Images/SummaryImages/West-To-North-Google-Maps-Image.png"><img src="https://github.com/dtroupe18/TaxiProject/raw/master/TrainToTrain/Images/SummaryImages/West-To-North-Google-Maps-Image.png" width="300" style="max-width: 100%;"></a></p>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/dtroupe18/TaxiProject/blob/master/TrainToTrain/Images/SummaryImages/Train%20Station%20West%20to%20Train%20Station%20North%20Google%20Maps%20Routes.png"><img src="https://github.com/dtroupe18/TaxiProject/raw/master/TrainToTrain/Images/SummaryImages/Train%20Station%20West%20to%20Train%20Station%20North%20Google%20Maps%20Routes.png" width="300" style="max-width: 100%;"></a></p>
+<ol dir="auto">
+<li>Create GPS traces that map the routes recommended by Google Maps</li>
+</ol>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/dtroupe18/TaxiProject/blob/master/AirToTrain/Images/Airport-to-train-google-maps.png"><img src="https://github.com/dtroupe18/TaxiProject/raw/master/AirToTrain/Images/Airport-to-train-google-maps.png" width="300" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/dtroupe18/TaxiProject/blob/master/AirToTrain/Images/Train%20to%20Airport%20Station%20Google%20Maps.png"><img src="https://github.com/dtroupe18/TaxiProject/raw/master/AirToTrain/Images/Train%20to%20Airport%20Station%20Google%20Maps.png" width="300" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/dtroupe18/TaxiProject/blob/master/TrainToTrain/Images/SummaryImages/West-To-North-Google-Maps-Image.png"><img src="https://github.com/dtroupe18/TaxiProject/raw/master/TrainToTrain/Images/SummaryImages/West-To-North-Google-Maps-Image.png" width="300" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/dtroupe18/TaxiProject/blob/master/TrainToTrain/Images/SummaryImages/Train%20Station%20West%20to%20Train%20Station%20North%20Google%20Maps%20Routes.png"><img src="https://github.com/dtroupe18/TaxiProject/raw/master/TrainToTrain/Images/SummaryImages/Train%20Station%20West%20to%20Train%20Station%20North%20Google%20Maps%20Routes.png" width="300" style="max-width: 100%;"></a></p>
 <ol start="2" dir="auto">
-<li>
 <li>
 <p dir="auto"><a href="https://github.com/dtroupe18/TaxiProject/blob/master/AirToTrain/Python-Scripts/find_relevant_trajectories.py">Filter</a> GPS trajectories by longitude and latitude so that only routes between the aiport and train station or north and west train stations are left. You'll also have to worry about routes that have infrequent readings because it makes reconstructing their true route impossible.</p>
 </li>
-<p dir="auto">Graph those routes using <a href="https://matplotlib.org/" rel="nofollow">Matplotlib</a> and compare them to Google Maps routes.All airport to All train to train stations route.</p>
+<li>
+<p dir="auto">Graph those routes using <a href="https://matplotlib.org/" rel="nofollow">Matplotlib</a> and compare them to Google Maps routes. <a href="https://github.com/dtroupe18/TaxiProject/tree/master/AirToTrain/Images/All-Route-Graphs">All airport to train station routes</a> <a href="https://github.com/dtroupe18/TaxiProject/tree/master/TrainToTrain/Images">All train to train routes</a></p>
 </li>
 </ol>
 
